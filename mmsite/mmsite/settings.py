@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 
-from .djangokey import SECRET_KEY
+from .djangokey import SECRET_KEY, DB_KEY
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'mmsite',
 ]
 
 MIDDLEWARE = [
@@ -80,7 +81,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'MusMak$default',
         'USER': 'MusMak',
-        'PASSWORD': 'myIl^/7P*q/)aNOA(IcAG[8?;KC"E',
+        'PASSWORD': DB_KEY,
         'HOST': 'MusMak.mysql.pythonanywhere-services.com',
     }
 }
