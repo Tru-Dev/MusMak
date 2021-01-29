@@ -39,8 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
-    'foundation',
 ]
 
 MIDDLEWARE = [
@@ -79,8 +77,11 @@ WSGI_APPLICATION = 'mmsite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'MusMak$default',
+        'USER': 'MusMak',
+        'PASSWORD': 'myIl^/7P*q/)aNOA(IcAG[8?;KC"E',
+        'HOST': 'MusMak.mysql.pythonanywhere-services.com',
     }
 }
 
